@@ -10,20 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t len)
 {
 	size_t	a;
+	char	*b;
 
 	a = 0;
+	b = str;
 	while (a < len)
 	{
-		*(unsigned char*)&str[a] = (unsigned char)c;
+		b[a] = c;
 		a++;
 	}
 	return (str);
-}
+}/*
 #include <stdio.h>
 #include <string.h>
 int main(void)
@@ -31,4 +33,4 @@ int main(void)
 	char	str[2] = "ab";
 	printf ("%s\n", memset(str, 'c', 4));
 	printf ("%s\n", ft_memset(str, 'c', 4));
-}
+}*/

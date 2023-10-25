@@ -10,18 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	a;
+	char	*b;
 
 	a = 0;
+	b = s;
 	while (a < n)
 	{
-		((char *)s)[a] = 0;
+		b[a] = 0;
 		a++;
 	}
-}
+}/*
 #include <stdio.h>
 int main(void)
 {
@@ -29,4 +32,4 @@ int main(void)
 //	bzero(str, 1);
 	ft_bzero(str, 2);
 	printf ("%s\n", str);
-}
+}*/
