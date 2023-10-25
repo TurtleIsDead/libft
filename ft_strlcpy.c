@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/25 16:09:05 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/25 17:13:00 by asobor           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
@@ -18,6 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (b);
 }
+/*
 #include <string.h>
 #include <stdio.h>
 int	main(void)
@@ -27,4 +40,4 @@ int	main(void)
 	char c1[] = "cat";
 	printf ("%lu", ft_strlcpy(c, c1, 2));
 	return (0);
-}
+}*/

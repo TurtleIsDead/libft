@@ -1,4 +1,16 @@
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/25 16:15:20 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/25 17:13:46 by asobor           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -17,10 +29,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+/*
 #include <stdio.h>
 int	main(void)
 {
 	char s1[] = "assfinger";
 	char s2[] = "assfunger";
 	printf ("%d", strncmp(s1, s2, 5));
-}
+}*/

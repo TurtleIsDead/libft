@@ -1,4 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/25 16:00:35 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/25 17:07:49 by asobor           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
+
 void	*ft_calloc(size_t count, size_t size)
 {
 	char	*b;
@@ -17,7 +30,8 @@ void	*ft_calloc(size_t count, size_t size)
 		return (0);
 	ft_bzero(b, a);
 	return (b);
-}/*
+}
+/*
 #include <stdio.h>
 int	main(void)
 {

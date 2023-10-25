@@ -1,4 +1,16 @@
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/25 16:44:31 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/25 17:02:12 by asobor           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -17,9 +29,10 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+/*
 #include <stdio.h>
 int	main(void)
 {
 	char	r[] = "doorarak";
 	printf ("%s", ft_strrchr(r, 'a'));
-}
+}*/

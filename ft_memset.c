@@ -6,7 +6,7 @@
 /*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 15:59:11 by asobor            #+#    #+#             */
-/*   Updated: 2023/08/21 14:33:34 by asobor           ###   ########.fr       */
+/*   Updated: 2023/10/25 17:12:27 by asobor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	*ft_memset(void *str, int c, size_t len)
 		a++;
 	}
 	return (str);
-}/*
+}
+/*
 #include <stdio.h>
 #include <string.h>
 int main(void)

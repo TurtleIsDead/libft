@@ -6,7 +6,7 @@
 /*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 15:08:38 by asobor            #+#    #+#             */
-/*   Updated: 2023/08/21 16:33:21 by asobor           ###   ########.fr       */
+/*   Updated: 2023/10/25 17:13:26 by asobor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		a++;
 	}
 	return ((unsigned char *)dest);
-}/*
+}
+/*
 #include <string.h>
 #include <stdio.h>
 int	main(void)
