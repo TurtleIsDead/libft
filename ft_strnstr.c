@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	b = 0;
 	if (len == 0 && big == NULL)
 		return (0);
-	if (strlen(little) == 0)
+	if (ft_strlen(little) == 0)
 		return ((char *)big);
 	if (little[a] == '\0')
 		return ((char *)big);
@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			b++;
 		}
-		if (b == strlen(little))
+		if (b == ft_strlen(little))
 			return ((char *)&big[a]);
 		a++;
 		b = 0;

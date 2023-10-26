@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 16:47:07 by asobor            #+#    #+#             */
-/*   Updated: 2023/10/25 17:07:22 by asobor           ###   ########.fr       */
+/*   Created: 2023/10/26 17:58:02 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/26 18:03:04 by asobor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= 65 && c <= 90)
-		return (c + 32);
-	else
-		return (c);
-}
-/*
-#include <unistd.h>
-#include <stdio.h>
+	char	*str;
+	size_t	a;
 
-int	main(void)
-{
-	printf("%d", ft_tolower('A'));
-}*/
+	if (!s)
+		return (NULL);
+	str = ft_strdup(s);
+	if (!(str))
+		return (NULL);
+	a = 0;
+	while (str[a])
+	{
+		str[a] = (*f)(a, str[a]);
+		a++;
+	}
+	return (str);
+}

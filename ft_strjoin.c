@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 16:47:07 by asobor            #+#    #+#             */
-/*   Updated: 2023/10/25 17:07:22 by asobor           ###   ########.fr       */
+/*   Created: 2023/10/26 16:55:39 by asobor            #+#    #+#             */
+/*   Updated: 2023/10/26 17:01:08 by asobor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	if (c >= 65 && c <= 90)
-		return (c + 32);
-	else
-		return (c);
-}
-/*
-#include <unistd.h>
-#include <stdio.h>
+	char	*a;
+	size_t	b;
+	size_t	c;
 
-int	main(void)
-{
-	printf("%d", ft_tolower('A'));
-}*/
+	if (!s1 || !s2)
+		return (NULL);
+	a = (char *)malloc(sizeof(*s1) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!a)
+		return (NULL);
+	b = 0;
+	c = 0;
+	while (s1[b])
+	{
+		a[c++] = s1[b];
+		b++;
+	}
+	b = 0;
+	while (s2[b])
+	{
+		a[c++] = s2[b];
+		b++;
+	}
+	a[c] = 0;
+	return (a);
+}
